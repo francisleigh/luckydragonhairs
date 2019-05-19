@@ -1,0 +1,37 @@
+.price-list-container {
+  background-color: white;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 400px;
+  width: 100%;
+}
+
+.price-list {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+}
+
+.price-list__item {
+  width: 100%;
+  height: 25px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-list__button {
+  border: 2px solid#FFB300;
+  height: 50px;
+  width: 100%;
+
+  background-color: transparent;
+  border-radius: 1rem;
+
+  color: black;
+}
