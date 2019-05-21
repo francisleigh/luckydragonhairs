@@ -1,13 +1,15 @@
 .price-list-container {
   background-color: white;
   padding: 1rem;
+  margin: 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  max-width: 400px;
-  width: 100%;
+  width: 600px;
+
+  height: 500px;
 }
 
 .price-list {

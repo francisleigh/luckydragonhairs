@@ -1,19 +1,32 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import HeroImage from "../components/HeroImage"
 import TitleBanner from "../components/TitleBanner"
-import PriceListRevealer from "../components/PriceListRevealer"
+
+import Container from '../components/Elements/Container'
+
+import {palette} from '../components/Elements/style.common'
+
+const content_container_styles = {
+  flexGrow: 1,
+  maxWidth: '900px'
+}
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`marshal`, `darling`, `lucky`, `dragon`, `hairs`, `barbering`]} />
     <HeroImage>
-      <TitleBanner />
-      <PriceListRevealer />
+      <TitleBanner padding="1rem" />
+      <Container height="100%"style={{maxHeight: '800px'}} responsive>
+        <Container theme="light" margin=".5rem" padding="1rem" style={content_container_styles} height="100%">
+          <h3 style={{color: palette.dark}}>Container 1 Bio</h3>
+        </Container>
+        <Container theme="dark" margin=".5rem" padding="1rem" style={content_container_styles} height="100%">
+          <h3 style={{color: palette.light}}>Container 2 Bio</h3>
+        </Container>
+      </Container>
     </HeroImage>
   </Layout>
 )
