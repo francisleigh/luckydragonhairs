@@ -12,7 +12,7 @@ const PriceListRevealer = () => {
     }
   }
   return (
-    <div class="price-list-container">
+    <div className="price-list-container">
       <h2>Price List</h2>
       {show && (
         <ul className="price-list">

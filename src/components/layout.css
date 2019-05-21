@@ -23,6 +23,11 @@ section,
 summary {
   display: block;
 }
+
+footer {
+  height: 200px;
+}
+
 audio,
 canvas,
 progress,
@@ -607,5 +612,11 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    height: 100px
   }
 }

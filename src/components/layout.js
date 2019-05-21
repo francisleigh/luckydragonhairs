@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import Container from '../components/Elements/Container'
+
 // import Header from "./header"
 import "./layout.css"
 
@@ -34,7 +36,12 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-
+            <Container theme="dark" height="100%">
+              <Container theme="light" width="50px" height="50px">IG</Container>
+              <Container theme="light" width="50px" height="50px">IG</Container>
+              <Container theme="light" width="50px" height="50px">IG</Container>
+              <Container theme="light" width="50px" height="50px">IG</Container>
+            </Container>
           </footer>
         </div>
       </>

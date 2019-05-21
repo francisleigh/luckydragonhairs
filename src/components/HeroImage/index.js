@@ -10,7 +10,7 @@ const HeroImage = ({children}) => (
     // background: `url(${img}) no-repeat center center`,
     // backgroundSize: `cover`
   }}>
-    <div class="hero-image__heading-container">
+    <div className="hero-image__heading-container">
       {children}
     </div>
   </div>

@@ -6,6 +6,7 @@ import HeroImage from "../components/HeroImage"
 import TitleBanner from "../components/TitleBanner"
 
 import Container from '../components/Elements/Container'
+import Revealer from '../components/Elements/Revealer'
 
 import {palette} from '../components/Elements/style.common'
 
@@ -17,17 +18,24 @@ const content_container_styles = {
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`marshal`, `darling`, `lucky`, `dragon`, `hairs`, `barbering`]} />
-    <HeroImage>
-      <TitleBanner padding="1rem" />
-      <Container height="100%"style={{maxHeight: '800px'}} responsive>
-        <Container theme="light" margin=".5rem" padding="1rem" style={content_container_styles} height="100%">
-          <h3 style={{color: palette.dark}}>Container 1 Bio</h3>
+    <Container direction="column">
+      <HeroImage>
+        <TitleBanner padding="1rem" />
+        <Container height="100%"style={{maxHeight: '800px'}} className="responsive">
+          <Container theme="light" margin=".5rem" style={content_container_styles} height="100%">
+            <Revealer buttonText="Bio">
+              <div>
+                <h3 style={{color: palette.dark}}>Bio</h3>
+                <p>i am the bio</p>
+              </div>
+            </Revealer>
+          </Container>
+          <Container theme="dark" margin=".5rem" style={content_container_styles} height="100%">
+            <h3 style={{color: palette.light}}>Book</h3>
+          </Container>
         </Container>
-        <Container theme="dark" margin=".5rem" padding="1rem" style={content_container_styles} height="100%">
-          <h3 style={{color: palette.light}}>Container 2 Bio</h3>
-        </Container>
-      </Container>
-    </HeroImage>
+      </HeroImage>
+    </Container>
   </Layout>
 )
 

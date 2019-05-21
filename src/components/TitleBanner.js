@@ -13,7 +13,7 @@ const TitleBanner = ({children}) => (
 )
 
 TitleBanner.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node
 }
 
 export default TitleBanner

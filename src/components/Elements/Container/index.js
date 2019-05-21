@@ -11,10 +11,10 @@ const Container = ({
   height = 'inherit',
   width = 'inherit',
   children,
-  responsive = false,
-  style = {}
+  style = {},
+  className = ''
 }) => (
-  <div className={`container ${responsive && 'responsive'}`} style={{
+  <div className={`container ${className}`} style={{
     backgroundColor: palette[theme],
     flexDirection: direction,
     margin,
