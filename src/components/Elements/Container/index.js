@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.container.css'
 
-import {palette} from '../style.common'
+import {palette} from '../../common/styles.common'
 
 const Container = ({
   theme = 'transparent',
@@ -14,7 +14,7 @@ const Container = ({
   style = {},
   className = ''
 }) => (
-  <div className={`container ${className}`} style={{
+  <div className={`container ${className} ${theme}`} style={{
     backgroundColor: palette[theme],
     flexDirection: direction,
     margin,

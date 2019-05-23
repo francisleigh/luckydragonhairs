@@ -1,3 +1,5 @@
+@import '../../common/styles.global.css'
+
 @media screen and (max-width: 720px) {
   .responsive { flex-direction: column !important; }
 }
@@ -8,4 +10,12 @@
 
   align-items: center;
   justify-content: center;
+}
+
+.dark {
+  color: var(--light);
+}
+
+.light {
+  color: var(--dark);
 }
