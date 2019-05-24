@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive {
+  @media (max-width: 800px) {
+    flex-direction: column-reverse !important;
+  }
+}
+
