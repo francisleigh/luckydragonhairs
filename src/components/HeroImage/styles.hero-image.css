@@ -1,3 +1,10 @@
+
+@media (max-width: 800px) {
+  .hero-image {
+    height:125vh !important;
+  }
+}
+
 .hero-image {
   height:100vh;
   display: flex;

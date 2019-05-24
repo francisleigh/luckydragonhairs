@@ -1,7 +1,8 @@
 import React from 'react'
-import './styles.container.css'
 
-import {palette} from '../../common/styles.common'
+import {palette} from '../../../styles/styles.global'
+
+import container_styles from './container.module.scss'
 
 const Container = ({
   theme = 'transparent',
@@ -11,10 +12,11 @@ const Container = ({
   height = 'inherit',
   width = 'inherit',
   children,
-  style = {},
-  className = ''
+  responsive = false,
+  className = ``,
+  style = {}
 }) => (
-  <div className={`container ${className} ${theme}`} style={{
+  <div className={`${container_styles.container} ${className} ${responsive && container_styles.responsive}`} style={{
     backgroundColor: palette[theme],
     flexDirection: direction,
     margin,
