@@ -13,10 +13,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`marshal`, `darling`, `lucky`, `dragon`, `hairs`, `barbering`]} />
     <Container direction="column">
       <HeroImage>
-        <Container height="100%" theme="light" responsive={true}
-          style={{
-            boxShadow: `0px 1px 20px pink`
-          }}>
+        <Container height="100%" theme="light" responsive={true}>
 
             <Bio />
             <BioImage />

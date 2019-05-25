@@ -1,0 +1,11 @@
+.bio_image_container {
+  justify-content: left;
+  padding-left: 1rem !important;
+
+  @media (max-width: 1024px) {
+    padding-left: 0 !important;
+    padding-bottom: 1rem !important;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}

@@ -10,6 +10,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Container from '../components/Elements/Container'
+import SocialIcon from '../components/Elements/SocialIcon'
+
+import instagram from '../images/instagram.png'
+import spotify from '../images/spotify.png'
 
 // import Header from "./header"
 import "./layout.css"
@@ -37,10 +41,8 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer>
             <Container theme="dark" height="100%">
-              <Container theme="light" width="50px" height="50px">IG</Container>
-              <Container theme="light" width="50px" height="50px">IG</Container>
-              <Container theme="light" width="50px" height="50px">IG</Container>
-              <Container theme="light" width="50px" height="50px">IG</Container>
+              <SocialIcon height="50px" width="50px" icon={spotify} />
+              <SocialIcon height="50px" width="50px" icon={spotify} />
             </Container>
           </footer>
         </div>

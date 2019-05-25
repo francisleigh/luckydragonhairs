@@ -8,11 +8,13 @@ import marsh_4 from '../../images/marsh-4.jpeg'
 import Container from '../Elements/Container'
 import Button from '../Elements/Button'
 
+import container_styles from './bio-image.module.scss'
+
 const IMGS = {
   marsh_1: {img: marsh_1, backgroundPositionY: 'center'},
   marsh_2: {img: marsh_2, backgroundPositionY: 'center'},
   marsh_3: {img: marsh_3, backgroundPositionY: 'top'},
-  marsh_4: {img: marsh_4, backgroundPositionY: 'bottom'},
+  marsh_4: {img: marsh_4, backgroundPositionY: 'center'}
 }
 
 const BioImage = () => {
@@ -26,14 +28,12 @@ const BioImage = () => {
   const {img, backgroundPositionY} = IMGS[`marsh_${KEY}`]
 
   return (
-    <Container theme="transparent" style={{
+    <Container className={container_styles.bio_image_container} theme="transparent" style={{
       background: `url(${img}) no-repeat center center`,
       backgroundSize: `cover`,
-      backgroundPositionY,
-      justifyContent: 'left',
+      backgroundPositionY
     }}>
-
-    <Button text="BOOK"/>
+      <Button text="BOOK" />
 
     </Container>
   )
