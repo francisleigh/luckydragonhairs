@@ -34,7 +34,6 @@ const BioImage = () => {
       backgroundPositionY
     }}>
       <Button text="BOOK" />
-
     </Container>
   )
 }
