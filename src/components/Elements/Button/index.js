@@ -1,8 +1,8 @@
 import React from 'react'
 
 import button_styles from './button.module.scss'
-const Button = ({text = ``, href = ``}) => (
-  <a href={href} className={button_styles.button}>{text}</a>
+const Button = ({text = ``, link = ``, target = `_blank`}) => (
+  <a href={link} target={target} rel="noopener noreferrer" className={button_styles.button}>{text}</a>
 )
 
 export default Button
