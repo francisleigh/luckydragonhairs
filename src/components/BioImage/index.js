@@ -33,7 +33,7 @@ const BioImage = () => {
       backgroundSize: `cover`,
       backgroundPositionY
     }}>
-      <Button text="BOOK" />
+      <Button text="BOOK" link="https://app.shedul.com/online_bookings/lucky-dragon-t46sl81x/link" />
     </Container>
   )
 }
