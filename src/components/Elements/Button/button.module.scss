@@ -1,12 +1,15 @@
 .button {
-	background-color: white;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	border: 2px solid black;
+	-moz-box-shadow: 2px 2px 2px -1px #d79df4;
+	-webkit-box-shadow: 2px 2px 2px -1px #d79df4;
+	box-shadow: 2px 2px 2px -1px #d79df4;
+	background-color:#ffea00;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #ffffff;
 	display: inline-block;
 	cursor: pointer;
-	color: black;
+	color:#f8414d;
 	font-family: inherit;
 	font-size: 1rem;
 	font-weight: bold;
@@ -19,6 +22,5 @@
     top: 1px;
   }
 }
-
 
 
