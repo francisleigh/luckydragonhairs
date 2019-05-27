@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
           <footer>
             <Container theme="dark" height="100%">
               <SocialIcon link="https://www.instagram.com/lookingsharpdarling/" icon={instagram} />
-              <SocialIcon icon={spotify} />
+              <SocialIcon link="https://open.spotify.com/playlist/5xQDEnLcBiweMW2DpDrAXd" icon={spotify} />
             </Container>
           </footer>
         </div>
