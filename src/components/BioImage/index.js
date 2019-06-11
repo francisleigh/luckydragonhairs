@@ -11,10 +11,10 @@ import Button from '../Elements/Button'
 import container_styles from './bio-image.module.scss'
 
 const IMGS = {
-  marsh_1: {img: marsh_1, backgroundPositionY: 'center'},
-  marsh_2: {img: marsh_2, backgroundPositionY: 'center'},
-  marsh_3: {img: marsh_3, backgroundPositionY: 'top'},
-  marsh_4: {img: marsh_4, backgroundPositionY: 'center'}
+  marsh_1: {img: marsh_3, backgroundPositionY: 'top', backgroundPositionX: 'left'},
+  marsh_2: {img: marsh_1, backgroundPositionY: 'center', backgroundPositionX: 'left'},
+  marsh_3: {img: marsh_2, backgroundPositionY: 'top', backgroundPositionX: 'left'},
+  marsh_4: {img: marsh_4, backgroundPositionY: 'center', backgroundPositionX: 'left'}
 }
 
 const BioImage = () => {
@@ -25,13 +25,14 @@ const BioImage = () => {
   if ([6,7,8].indexOf(month) !== -1) KEY = 3
   if ([9,10,11].indexOf(month) !== -1) KEY = 4
 
-  const {img, backgroundPositionY} = IMGS[`marsh_${KEY}`]
+  const {img, backgroundPositionY, backgroundPositionX} = IMGS[`marsh_${KEY}`]
 
   return (
     <Container className={container_styles.bio_image_container} theme="transparent" style={{
       background: `url(${img}) no-repeat center center`,
       backgroundSize: `cover`,
-      backgroundPositionY
+      backgroundPositionY,
+      backgroundPositionX
     }}>
       <Button text="BOOK" link="https://app.shedul.com/online_bookings/lucky-dragon-t46sl81x/link" />
     </Container>
