@@ -43,9 +43,9 @@ const Layout = ({ children }) => (
           <footer>
             <Container height="100%">
               <SocialIcon link="https://www.instagram.com/lookingsharpdarling/" icon={instagram} />
-              {/* <SocialIcon link="https://open.spotify.com/playlist/5xQDEnLcBiweMW2DpDrAXd" icon={spotify} width="100px"/> */}
-              <SocialIcon link="https://open.spotify.com/playlist/5xQDEnLcBiweMW2DpDrAXd" icon={spotify} />
-              {/* <SocialIcon link="https://open.spotify.com/playlist/5xQDEnLcBiweMW2DpDrAXd" icon={vimeo} /> */}
+              {/* <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} width="100px"/> */}
+              <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} />
+              {/* <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={vimeo} /> */}
             </Container>
           </footer>
         </div>
