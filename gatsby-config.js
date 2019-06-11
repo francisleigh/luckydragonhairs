@@ -27,8 +27,8 @@ module.exports = {
         name: `luckydragonhairs`,
         short_name: `LDH`,
         start_url: `/`,
-        background_color: `#F4511E`,
-        theme_color: `#F4511E`,
+        background_color: `#d79df4`,
+        theme_color: `#d79df4`,
         display: `minimal-ui`,
         icon: `src/images/dragon-face-tribal-art-256x256.png`, // This path is relative to the root of the site.
       },
