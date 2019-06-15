@@ -611,14 +611,28 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   footer {
     height: 70px
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
   }
 }

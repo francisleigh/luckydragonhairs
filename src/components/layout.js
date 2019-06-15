@@ -14,6 +14,7 @@ import SocialIcon from '../components/Elements/SocialIcon'
 
 import instagram from '../images/instagram.png'
 import spotify from '../images/spotify.png'
+import spotify_barcode from '../images/spotifybarcodewhite.png'
 import vimeo from '../images/vimeo.png'
 
 // import Header from "./header"
@@ -42,10 +43,14 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer>
             <Container height="100%">
-              <SocialIcon link="https://www.instagram.com/lookingsharpdarling/" icon={instagram} />
-              {/* <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} width="100px"/> */}
-              <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} />
-              {/* <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={vimeo} /> */}
+              <SocialIcon link="https://www.instagram.com/lookingsharpdarling/" icon={instagram}  height="30px"/>
+              <span className="mobile">
+                <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify_barcode} width="200px" />
+              </span>
+              <span className="desktop">
+                <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} mobileIcon={spotify_barcode} />
+              </span>
+              <SocialIcon link="https://vimeo.com/" icon={vimeo} />
             </Container>
           </footer>
         </div>
