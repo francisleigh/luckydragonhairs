@@ -4,7 +4,7 @@ import Container from '../Elements/Container'
 
 const Bio = () => (
   <Container direction="column" className={container_styles.bio_container}>
-    <Container direction="column" padding="0.5rem" className={container_styles.bio}>
+    <Container direction="column" padding="1rem" className={container_styles.bio}>
       <p><strong>Lucky Dragon</strong> is a one-chair barbershop in Stoke Newington that specialises in short haircuts for all ages and all genders.</p>
       <p>Trained at Toni & Guy, Marshal Darling spent four years working in two of London’s busiest, high-end barbershops before founding Lucky Dragon in 2019.</p>
       <p>Marshal’s mission is to encourage his clients to take time out of their busy London lives and restore their wellbeing, starting with their hairs and a hot towel.</p>
