@@ -13,7 +13,7 @@ import container_styles from './bio-image.module.scss'
 const IMGS = {
   marsh_1: {img: marsh_3, backgroundPositionY: 'top', backgroundPositionX: 'left'},
   marsh_2: {img: marsh_1, backgroundPositionY: 'center', backgroundPositionX: 'left'},
-  marsh_3: {img: marsh_2, backgroundPositionY: 'top', backgroundPositionX: 'left'},
+  marsh_3: {img: marsh_1, backgroundPositionY: 'center', backgroundPositionX: 'left'},
   marsh_4: {img: marsh_4, backgroundPositionY: 'center', backgroundPositionX: 'left'}
 }
 
