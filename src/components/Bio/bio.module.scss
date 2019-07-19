@@ -14,6 +14,11 @@ $max-width: 600px;
 .bio {
   max-width: $max-width;
   flex: 1;
+
+}
+.bio__text {
+  width: 100%;
+  text-align: left;
 }
 
 .price_container {
