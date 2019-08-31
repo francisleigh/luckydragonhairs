@@ -50,6 +50,9 @@ const Layout = ({ children }) => (
               <span className="desktop">
                 <SocialIcon link="https://open.spotify.com/playlist/7C2L5Gg10PD1WP3nzuorBu" icon={spotify} mobileIcon={spotify_barcode} />
               </span>
+              <span>
+                <SocialIcon link="https://vimeo.com/luckydragonhairs" icon={vimeo} />
+              </span>
             </Container>
           </footer>
         </div>
